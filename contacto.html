@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <title>Veterinaria Pequeños Peludos</title>
+</head>
+
+<header>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/2a7b83d1e0.js" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-dark bg-dark fixed-top menu">
+    <div class="container-fluid">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./img/logo2.jpg" alt="">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark menu_desplegable" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Pequeños Peludos</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active fa-solid fa-house" aria-current="page" href="index.html">
+                Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fa-solid fa-shop" href="productos.html"> Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fa-solid fa-shower" href="servicios.html"> Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fa-solid fa-paw" href="Nosotros.html"> Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fa-solid fa-address-book" href="contacto.html"> Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <div class="contact-container">
+    <div class="image-container">
+      <img src="./img/formulario.jpg" alt="Imagen">
+    </div>
+    <div class="form-container">
+      <h3>Contacto</h3>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="raza">Raza de la mascota:</label>
+        <input type="text" id="raza" name="raza" required>
+
+        <button class="btn_enviar">
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path fill="currentColor"
+                  d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <span>Enviar</span>
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+
+<footer class="footer">
+  <div class="social-icons">
+    <a href="./img/whatsapp.png"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+
+  </div>
+  <div class="contact-info">
+    <p>Dirección: Calle Principal, Ciudad</p>
+    <p>Teléfono: (123) 456-7890</p>
+    <p>Correo: ejemplo@correo.com</p>
+  </div>
+</footer>
+
+
+</html>
