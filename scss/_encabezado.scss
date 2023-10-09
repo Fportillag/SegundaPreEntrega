@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #80BBD0;
+    /* Color de fondo del encabezado */
+    padding: 20px;
+    overflow: hidden;
+    /* Evita que los elementos floten fuera del contenedor */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra en la parte inferior */
+    text-align: right;
+    /* Alinea el menú a la derecha */
+
+    img {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+.logo img {
+    width: 150px;
+    height: 90px;
+}
