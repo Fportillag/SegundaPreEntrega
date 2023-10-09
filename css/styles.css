@@ -101,19 +101,6 @@ header img {
   cursor: pointer;
 }
 
-.footer-contacto {
-  background-color: #80bbd0;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .btn_enviar {
   font-family: inherit;
   font-size: 18px;
@@ -235,7 +222,7 @@ header img {
 }
 
 .carditem {
-  display: inline-block;
+  display: "inline-block";
   vertical-align: top;
   width: 250px;
   margin-right: 20px;
@@ -279,6 +266,19 @@ header img {
   font-size: 14px;
 }
 
+.footer-contacto {
+  background-color: #80bbd0;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .social-icons a {
   color: #fff;
   text-decoration: none;
@@ -310,7 +310,7 @@ header img {
 }
 
 .card-image {
-  display: inline-block;
+  display: "inline-block";
   width: 150px;
   vertical-align: top;
 }
@@ -320,7 +320,7 @@ header img {
 }
 
 .card-content {
-  display: inline-block;
+  display: "inline-block";
   width: calc(100% - 150px);
   /* Restar el ancho de la imagen */
   padding: 20px;

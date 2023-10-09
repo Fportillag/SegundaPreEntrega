@@ -3,6 +3,8 @@
 @import 'contacto';
 @import 'botones';
 @import 'media';
+
+$displayblock:"inline-block";
 .container {
     min-height: 80vh;
     margin-top: 100px;
@@ -10,29 +12,21 @@
 .card {
     min-width: 540px;
 }
-
-
-
 .contenedor img {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
     height: 450px;
 }
-
-
-
 .cards {
     display: flex;
     justify-content: center;
     /* align-items: center;
     height: 100vh;*/
 }
-
 .h3 {
     color: red;
 }
-
 .owner-card {
     text-align: center;
     padding: 20px;
@@ -61,7 +55,7 @@
 }
 
 .carditem {
-    display: inline-block;
+    display: $displayblock;
     vertical-align: top;
     width: 250px;
     margin-right: 20px;
@@ -99,7 +93,7 @@
 
 }
 
-.footer {
+@mixin footer_page(){
     background-color: #80bbd0;
     color: #fff;
     padding: 20px;
@@ -109,6 +103,15 @@
     font-size: 14px;
 }
 
+.footer {
+    @include footer_page();
+}
+.footer-contacto {
+    @include footer_page();
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 .social-icons a {
     color: #fff;
@@ -144,7 +147,7 @@
 }
 
 .card-image {
-    display: inline-block;
+    display: $displayblock;
     width: 150px;
     vertical-align: top;
 
@@ -156,7 +159,7 @@
 }
 
 .card-content {
-    display: inline-block;
+    display: $displayblock;
     width: calc(100% - 150px);
     /* Restar el ancho de la imagen */
     padding: 20px;
