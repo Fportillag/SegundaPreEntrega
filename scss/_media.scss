@@ -1,20 +1,24 @@
 @media (max-width: 1024px) {
 
-    .row{
-       flex-direction: column;
-       align-items: initial;
-    }
-    .col-md-4 img:nth-child(2),img:nth-child(3){
-        display: none;
-    }
+  .row {
+    flex-direction: column;
+    align-items: initial !important;
+    justify-content: initial;
+  }
+
+  .col-md-4 img:nth-child(2),
+  img:nth-child(3) {
+    display: none;
+  }
 
 }
 
 @media (max-width: 780px) {
-     .carousel{
-       display: none;
-     }
-    /* .row{
+  .carousel {
+    display: none;
+  }
+
+  /* .row{
        flex-direction: column;
      }*/
 }

@@ -156,9 +156,11 @@ header img {
 @media (max-width: 1024px) {
   .row {
     flex-direction: column;
-    align-items: initial;
+    align-items: initial !important;
+    justify-content: initial;
   }
-  .col-md-4 img:nth-child(2), img:nth-child(3) {
+  .col-md-4 img:nth-child(2),
+  img:nth-child(3) {
     display: none;
   }
 }
@@ -167,8 +169,8 @@ header img {
     display: none;
   }
   /* .row{
-     flex-direction: column;
-   }*/
+       flex-direction: column;
+     }*/
 }
 .container {
   min-height: 80vh;
@@ -202,7 +204,7 @@ header img {
   padding: 20px;
   border: 1px solid #ccc;
   margin: 10px;
-  min-height: 350px;
+  height: 600px;
   border-radius: 10px;
 }
 .owner-card img {
