@@ -108,7 +108,6 @@ $displayblock:"inline-block";
 }
 .footer-contacto {
     @include footer_page();
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
